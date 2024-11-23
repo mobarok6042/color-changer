@@ -30,15 +30,73 @@
     width: 120px;
     height : 50px;
 }
+.violet{border: 1px solid violet;
+    width: 120px;
+    height : 50px;
+}
+.pink{border: 1px solid pink;
+    width: 120px;
+    height : 50px;
+}
+.beige{border: 1px solid beige;
+    width: 120px;
+    height : 50px;
+}
+.sky{
+    border: 1px solid skyblue;
+    width: 120px;
+    height : 50px;
+}
+.orange{
+    border: 1px solid orange;
+    width: 120px;
+    height : 50px;
+}
+#yellow{
+    border: 1px solid yellow;
+    width: 120px;
+    height : 50px;
+}
+#yg{
+    border: 1px solid yellowgreen;
+    width: 120px;
+    height : 50px;
+}
+#W{
+    width:35px;
+    height: 15px;
+}
+#B{
+    width:35px;
+    height: 15px;
+}
+
     </style>
     <main>
+        <button id="W">W</button>
+        <button id="B">B</button>
         <button class="red" onclick="document.body.style.backgroundColor='red'">Make Red</button>
         <button class="green" onclick="makeGreen()">Make Green</button>
         <button id="purple">Make Purple</button>
         <button id="blue">Make Blue</button>
         <button class="blueviolet" onclick="makeBlueviolet()">Make Blueviolet</button>
+        <button class="violet" onclick="makeViolet()">Make Violet</button>
+        <button class="pink" onclick="makePink()">Make Pink</button>
+        <button class="beige" onclick="makeBeige()">Make Beige</button>
+        <button class="sky" onclick="makeSky()">Make Sky</button>
+        <button class="orange" onclick="makeOrange()">Make Orange</button>
+        <button id="yellow">Make Yellow</button>
+        <button id="yg">Make Yellowgreen</button>
     </main>
     <script>
+        const wButton = document.getElementById('W')
+        wButton.onclick = function makeW (){
+            document.body.style.backgroundColor="white"
+        }
+        const bButton = document.getElementById('B')
+        bButton.onclick = function makeB (){
+            document.body.style.backgroundColor='black'
+        }
      function makeGreen (){
         document.body.style.backgroundColor="green"
      };
@@ -54,7 +112,29 @@
      function makeBlueviolet(){
         document.body.style.backgroundColor='blueviolet'
      }
-
+    function makeViolet(){
+        document.body.style.backgroundColor='violet'
+    }
+    function makePink(){
+        document.body.style.backgroundColor='pink'
+    }
+    function makeBeige(){
+        document.body.style.backgroundColor='beige'
+    }
+    function makeSky(){
+        document.body.style.backgroundColor='skyblue'
+    }
+    function makeOrange(){
+        document.body.style.backgroundColor='orange'
+    }
+    const yellowButton = document.getElementById('yellow')
+    yellowButton.onclick= function makeYellow(){
+        document.body.style.backgroundColor='yellow'
+    }
+    const ygButton = document.getElementById('yg')
+    ygButton.onclick= function makeYG (){
+        document.body.style.backgroundColor='yellowgreen'
+    }
      
     </script>
 </body>
