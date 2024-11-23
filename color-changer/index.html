@@ -12,15 +12,50 @@
     width: 120px;
     height: 50px;
 }
+.green{
+    border: 1px solid green;
+    width: 120px;
+    height : 50px;
+}
+#purple{
+    border: 1px solid purple;
+    width: 120px;
+    height : 50px;
+}
+#blue{border: 1px solid blue;
+    width: 120px;
+    height : 50px;
+}
+.blueviolet{border: 1px solid blueviolet;
+    width: 120px;
+    height : 50px;
+}
     </style>
     <main>
         <button class="red" onclick="document.body.style.backgroundColor='red'">Make Red</button>
         <button class="green" onclick="makeGreen()">Make Green</button>
+        <button id="purple">Make Purple</button>
+        <button id="blue">Make Blue</button>
+        <button class="blueviolet" onclick="makeBlueviolet()">Make Blueviolet</button>
     </main>
     <script>
      function makeGreen (){
         document.body.style.backgroundColor="green"
+     };
+     const purpleButton = document.getElementById('purple')
+     purpleButton.onclick = function makePurple (){
+        document.body.style.backgroundColor="purple"
+     };
+     const blueButton = document.getElementById('blue')
+     blueButton.addEventListener('click',makeBlue)
+     function makeBlue(){
+        document.body.style.backgroundColor='blue'
+     };
+     function makeBlueviolet(){
+        document.body.style.backgroundColor='blueviolet'
      }
+
+     
     </script>
 </body>
 </html>
